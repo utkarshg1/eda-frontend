@@ -10,7 +10,8 @@ import {
 } from "lucide-react";
 import Plot from "react-plotly.js";
 
-const API_BASE_URL = "http://localhost:8000";
+// Get API base URL from environment variable
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const EDAApp = () => {
   const [file, setFile] = useState(null);
